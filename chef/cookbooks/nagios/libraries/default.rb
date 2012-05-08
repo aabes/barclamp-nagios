@@ -55,6 +55,8 @@ class Evaluator
     val = e.eval_with_context(location)
     Chef::Log.debug("Looking at #{location} for #{type}. Got: #{val}")
     val
+    rescue 
+       ni
   end
   
 end
